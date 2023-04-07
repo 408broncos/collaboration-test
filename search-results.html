@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <title>Library of Congress Search Engine</title>
+  </head>
+  <body class="row min-vh-100 w-100">
+    <aside class="col-3 p-3 ps-4 bg-secondary-subtle">
+      <h1>Library of Congress Search Engine</h1>
+      <form>
+        <input type="text" name="search" />
+        <select name="format">
+          <option>Select a format...</option>
+          <option>Option 1</option>
+          <option>Option 2</option>
+        </select>
+        <input type="submit" name="submit" />
+      </form>
+      <button id="go-back">← Go Back</button>
+    </aside>
+
+    <main class="col-9">
+      <h2>Showing results for <span id="search-term"></span></h2>
+      <section id="search-results"></section>
+    </main>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
