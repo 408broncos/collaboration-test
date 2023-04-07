@@ -16,18 +16,23 @@
     <aside class="col-3 p-3 ps-4 bg-secondary-subtle">
       <h1>Library of Congress Search Engine</h1>
       <form>
-        <input type="text" name="search" />
-        <select name="format">
-          <option>Select a format...</option>
-          <option>Option 1</option>
-          <option>Option 2</option>
+        <input type="text" class="form-control-lg mb-3 w-100" name="search" />
+        <select class="form-select form-select-lg mb-3" name="format">
+          <option selected value="search">Select a format...</option>
         </select>
-        <input type="submit" name="submit" />
+        <input
+          type="submit"
+          class="btn btn-lg w-100 btn-success"
+          name="submit"
+        />
       </form>
-      <button id="go-back">← Go Back</button>
+      <hr />
+      <button class="btn btn-lg btn-danger w-100" id="go-back">
+        ← Go Back
+      </button>
     </aside>
 
-    <main class="col-9">
+    <main class="col-9 p-3 px-4 bg-dark text-light">
       <h2>Showing results for <span id="search-term"></span></h2>
       <section id="search-results"></section>
     </main>
@@ -37,5 +42,6 @@
       integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
       crossorigin="anonymous"
     ></script>
+    <script src="assets/js/script.js"></script>
   </body>
 </html>
